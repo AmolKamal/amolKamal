@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DragNdrop</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <h1>Drag
+               
+            </h1>
+            <div id = "im" class="imges">
+                <img id="i1" src="https://source.unsplash.com/random/?random&1" alt="img" draggable="true" ondragstart="drag(event)" >
+                <img id="i2" src="https://source.unsplash.com/random/?random&2" alt="img" draggable="true" ondragstart="drag(event)" >
+                <img id="i3" src="https://source.unsplash.com/random/?random&3" alt="img" draggable="true" ondragstart="drag(event)" >
+                <img id="i4" src="https://source.unsplash.com/random/?random&4" alt="img" draggable="true" ondragstart="drag(event)" >
+            </div>
+
+        </div>
+        
+        <div class="child">
+            <h1 >Drop
+                
+            </h1>
+            <div class="imges" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+        </div>
+    </div>
+  <button onclick="rset()">RESET</button>
+    
+</body>
+</html>
